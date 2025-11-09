@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado Mágico Tultepec</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8fc761a27e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="inicio">
+        <video autoplay muted loop class="fondo">
+            <source src="src/VIDEO_FONDO3.mp4" type="video/mp4">
+        </video>
+        <header class="contenedor-menu fixed-top">
+            <a class="mde" href="#" id="menu-toggle">
+                <img class="mh" src="src/MenuH.png" alt="">
+            </a>
+            <div class="dropdown-menu">
+                <a href="tienda.html"><i class="fa-solid fa-ice-cream fa-s" style="color: black;"></i>Eventos</a>
+            </div>
+            <a href="#">
+                <img class="logo" src="src/LOGO.png" alt="">
+            </a>
+            <i class="fa-brands fa-whatsapp" style="color: #e2e5ea; font-size: 4rem;"></i>
+        </header>
+        <script>
+    // Lógica para mostrar/ocultar el menú al hacer clic
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuContainer = document.querySelector('.contenedor-menu');
+
+    menuToggle.addEventListener('click', (e) => {
+      e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      menuContainer.classList.toggle('active'); // Alterna la clase 'active'
+    });
+
+    // Cierra el menú si se hace clic fuera de él
+    document.addEventListener('click', (e) => {
+      if (!menuContainer.contains(e.target)) {
+        menuContainer.classList.remove('active');
+      }
+    });
+  </script>
+    </section>
+    <section class="helados">
+        <div class="banner">
+            <img src="src/heladoban.png" alt="">
+            <h1>HELADOS</h1>
+            <img src="src/heladoban2.png" alt="">
+        </div>
+        <div class="precios-helados">
+             <!-- Producto 1 -->
+            <div class="producto-item">
+                <div class="imagen-producto">
+                    <img class="mano" src="src/bolam.png" alt="Helado en mano">
+                </div>
+                <div class="precio-producto">
+                    <h1>GRANDE</h1>
+                    <div class="barpre">
+                        <h1 class="line lineas-mobile">- -</h1>
+                        <h1 class="line lineas-desktop">- - - - - - -</h1>
+                        <h1>$80</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="producto-item">
+                <div class="separa">
+                    <img class="tb" src="src/bola.png" alt="Bola de helado">
+                </div>
+                <div class="precio-producto">
+                    <h1>MEDIANO</h1>
+                    <div class="barpre">
+                        <h1 class="line lineas-mobile">- -</h1>
+                        <h1 class="line lineas-desktop">- - - - - - -</h1>
+                        <h1>$60</h1>
+                    </div>
+                </div>
+                <style>
+                    .tb{
+                    max-height: 200px;
+                    width: auto;
+                    position: relative;
+                    left: 70%;
+                    }
+                    .separa{
+                    padding-right: 100px;
+                    width: 30%;
+                    }
+                </style>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="producto-item">
+                <div class="separa">
+                    <img class="tc" src="src/cono.png" alt="Cono de helado">
+                </div>
+                <div class="precio-producto">
+                    <h1>CHICO</h1>
+                    <div class="barpre">
+                        <h1 class="line lineas-mobile">- -</h1>
+                        <h1 class="line lineas-desktop">- - - - - - -</h1>
+                        <h1>$38</h1>
+                    </div>
+                </div>
+                <style>
+                    .tc{
+                    max-height: 400px;
+                    width: auto;
+                    position: relative;
+                    left: 50%;
+                    padding-right: 50px;
+                    }
+                    .producto-item{
+                        margin-bottom: 0;
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+    <section class="litros">
+        <div class="litro">
+            <img src="src/globo.png" alt="">
+            <div class="hero-text">
+                <h2>Litro</h2>
+                <h2>$170</h2>
+            </div>
+        </div>
+        <img class="vaso" src="src/vaso.png" alt="" height="90%">
+        <div class="litro">
+            <img src="src/globo.png" alt="">
+            <div class="hero-text">
+                <h2>½ Litro</h2>
+                <h2>$85</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

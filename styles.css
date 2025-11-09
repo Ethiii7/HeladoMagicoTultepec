@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    color: #3c3333;
+}
+.fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.dropdown-menu{
+    --bs-dropdown-font-size: small !important;
+    --bs-dropdown-min-width: 5rem !important;
+}
+.contenedor-menu {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente si es necesario */
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0px;
+    background-color: black;
+    }
+.contenedor-menu a{
+    border-radius: 25px;
+    text-decoration: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    top: 100%; /* Lo coloca justo debajo del botón */
+    border-radius: 10px;
+    min-width: 160px; /* Evita que se colapse */
+}
+/* Estilo de los elementos del menú */
+    .dropdown-menu a {
+      color: rgb(63, 63, 63);
+      text-decoration: none;
+      display: block;
+      padding: 8px 12px;
+      font-size: 1.5rem;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #ddd;
+    }
+
+    /* Mostrar el menú al hacer clic */
+    .contenedor-menu.active .dropdown-menu {
+      display: block;
+    }
+header a img{
+    width: 30%;
+    align-items: center;
+}
+header a{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+.inicio {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.helados{
+    background-color: #caa666;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner img{
+    height: 200px;
+}
+.banner h1{
+    font-size: 6rem;
+}
+/* SECCIÓN MODIFICADA - Estructura para alinear imágenes y precios */
+    .precios-helados{
+        background-color: #e7dab5;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+        padding-bottom: 0;
+    }
+    
+    .producto-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .imagen-producto {
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .imagen-producto img {
+        max-height: 250px;
+        width: auto;
+    }
+    
+    .precio-producto {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .barpre {
+        display: flex;
+        align-items: center;
+    }
+    
+    .line{
+        color: #90601f !important;
+        font-size: 5rem;
+        font-weight: 900;
+        margin-right: 30px;
+    }
+    
+    .precio-producto h1 {
+        color: #574b3b;
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    .litros{
+            background-color: #e7dab5;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            padding-top: 35px;
+        }
+        .pre{
+            height: 80%;
+            position: relative;
+            padding-top: 35px;
+        }
+        .litro {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .litro img{
+            filter: drop-shadow(1px 4px 7px black);
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .hero-text {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 80%;
+        }
+        .hero-text h2 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+@media (max-width: 768px){
+    .fondo{
+        height: 100%;
+        width: 100%;
+        padding-top: 10%;
+    }
+    .logo{
+        width: 50% !important;
+    }
+    .mh{
+        width: 70%;
+    }
+    header i{
+        font-size: 2rem !important;
+    }
+    .inicio {
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+    }
+    .banner img{
+    height: 80px;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .imagen-producto {
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .imagen-producto img {
+        max-height: 100px;
+        width: auto;
+        left: 0% !important;
+    }
+    .tb{
+        max-height: 100px !important;
+        width: auto;
+        left: 95% !important;
+    }
+    .tc{
+        max-height: 200px !important;
+        left: 45%;
+    }
+    .separa{
+        padding-right: 100px;
+        width: 40% !important;
+    }
+    .precio-producto {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .barpre {
+        display: flex;
+        align-items: center;
+    }
+    
+    .line{
+        color: #90601f !important;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-right: 30px;
+    }
+    
+    .precio-producto h1 {
+        color: #574b3b;
+        font-size: 2rem;
+        margin: 0;
+    }
+    .lineas-mobile {
+    display: none;
+    }
+
+    .lineas-desktop {
+        display: block;
+    }
+    .hero-text {
+        top: 44%;
+        left: 55%;
+    }
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+    .litro img{
+        filter: drop-shadow(1px 2px 2px black);
+        width: 109px !important;
+        padding: 10px;
+    }
+    .vaso{
+        width: 170px;
+    }
+    .litros{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.lineas-mobile {
+  display: block;
+}
+
+.lineas-desktop {
+  display: none;
+}
+.mano{
+    float: left;
+    padding-left: 0;
+}
