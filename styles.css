@@ -515,8 +515,8 @@ html, body {
     }
     .social-icon{
         font-size: 2rem !important;
-        width: 70px;
-        height: 70px;
+        width: 65px !important;
+        height: 65px !important;
     }
 }
 .social-icon {
