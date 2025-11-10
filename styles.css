@@ -148,6 +148,11 @@ header a{
         font-size: 4rem;
         margin: 0;
     }
+    .precio-producto p {
+        color: #574b3b;
+        font-size: 4rem;
+        margin: 0;
+    }
 
     .litros{
             background-color: #e7dab5;
@@ -182,7 +187,6 @@ header a{
         .hero-text h2 {
             font-size: 4rem;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 @media (max-width: 768px){
     .fondo{
@@ -258,6 +262,11 @@ header a{
         font-size: 2rem;
         margin: 0;
     }
+    .precio-producto p {
+        color: #574b3b;
+        font-size: 2rem;
+        margin: 0;
+    }
     .lineas-mobile {
     display: none;
     }
@@ -284,6 +293,16 @@ header a{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .enlaces{
+        font-size: 1.5rem !important;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .prod p{
+    color: #e2e5ea !important;
+    font-size: 1rem !important;
+    padding-bottom: 5px;
+}
 }
 .lineas-mobile {
   display: block;
@@ -296,3 +315,242 @@ header a{
     float: left;
     padding-left: 0;
 }
+
+.extras{
+    background-color: black;
+    display: flex;
+    
+}
+.prod{
+    width: 90% !important;
+}
+.prod h1{
+    color: #e2e5ea !important;
+    font-size: 3rem !important;
+    padding-bottom: 10px;
+}
+.prod p{
+    color: #e2e5ea !important;
+    font-size: 3rem !important;
+    padding-bottom: 10px;
+}
+
+.titulo h1{
+    font-size: 4.5rem !important;
+    color: #e2e5ea !important;
+    padding-bottom: 50px;
+}
+.segunda{
+    text-align: center;
+    justify-content: flex-start;
+}
+.line2{
+    color: #e2e5ea !important;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.primera{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    width: 20%;
+}
+.extras img{
+    width: 70%;
+}
+.gira{
+    transform: rotate(30deg);
+    width: 40% !important;
+}
+.tercera{
+    width: 10%;
+    padding-top: 0 !important;
+}
+.segunda{
+    width: 70%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.banla{
+    width: 100% !important;
+    height: 400px;
+}
+.redes{
+    background-color: #caa666;
+}
+.banre{
+    padding: 15px;
+    background-color: #caa666;
+    text-align: center;
+}
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%;
+    font-size: 3rem;
+}
+.posts{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    color: #e2e5ea !important;
+    border-radius: 50px;
+}
+.es-header-user-username{
+    color: #e2e5ea !important;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.es-header-user-full-name{
+    color: #e2e5ea !important;
+    border-radius: 50px;
+}
+.eapps-instagram-feed-header-follow-button-icon {
+    fill: #e2e5ea;
+}
+.eapps-instagram-feed-header-container{
+    border-radius: 25px;
+}
+.eapps-instagram-feed-posts-grid-load-more-tex,t .eapps-instagram-feed-posts-grid-load-more-text-visible{
+    color: #e2e5ea !important;
+}
+/* SECCIÓN EXTRAS - VERSIÓN ESCRITORIO */
+.extras{
+    background-color: black;
+    display: flex;
+}
+
+/* SECCIÓN EXTRAS - VERSIÓN MÓVIL */
+@media (max-width: 768px){
+    .extras {
+        flex-direction: row; /* Mantener en fila */
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+    
+    .primera {
+        width: 25%;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    .primera img {
+        margin-bottom: 10px;
+    }
+    
+    .gira {
+        width: 60% !important;
+        transform: rotate(30deg);
+    }
+    
+    .segunda {
+        width: 60%;
+        padding: 15px 5px;
+    }
+    
+    .tercera {
+        width: 15%;
+        padding-top: 0 !important;
+    }
+    
+    .banla {
+        width: 100% !important;
+        height: 250px !important;
+    }
+    
+    .titulo h1 {
+        font-size: 2.5rem !important;
+        padding-bottom: 20px;
+    }
+    
+    .prod h1 {
+        font-size: 1.5rem !important;
+        padding-bottom: 5px;
+    }
+    
+    .prod p {
+        font-size: 1.2rem !important;
+        padding-bottom: 5px;
+    }
+    
+    .line2 {
+        font-size: 1.5rem !important;
+        margin-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .barpre {
+        justify-content: center;
+    }
+    
+    /* Ajustar las líneas para móvil en extras */
+    .extras .lineas-mobile {
+        display: block;
+    }
+    
+    .extras .lineas-desktop {
+        display: none;
+    }
+    .extras img{
+    width: 90%;
+    }
+}
+html, body {
+    overflow-x: hidden; /* Previene scroll horizontal */
+    max-width: 100%; /* Asegura que no exceda el ancho */
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .enlaces {
+        padding-left: 35px; /* Reduce en móviles */
+        padding-right: 35px;
+    }
+    .social-icon{
+        font-size: 2rem !important;
+        width: 70px;
+        height: 70px;
+    }
+}
+.social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            border-radius: 40%;
+            font-size: 3rem;
+            color: white !important;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            background-color: #90601f;
+        }   
+        /* 7. Efecto de deslizamiento */
+        .slide-effect {
+            position: relative;
+        }
+
+        .slide-effect::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .slide-effect:hover::after {
+            left: 100%;
+        }
