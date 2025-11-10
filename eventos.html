@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado Mágico Tultepec</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8fc761a27e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="inicio">
+        <img src="src/eventos1.jpeg" alt="" class="fondo-img">
+        <header class="contenedor-menu fixed-top">
+            <a class="mde" href="#" id="menu-toggle">
+                <img class="mh" src="src/MenuH.png" alt="">
+            </a>
+            <div class="dropdown-menu">
+                <a href="index.html"><i class="fa-solid fa-home fa-s" style="color: black;"></i>Inicio</a>
+                <a href="bebidas.html"><i class="fa-solid fa-mug-hot fa-s" style="color: black;"></i>Bebidas</a>
+                <a href="extras.html"><i class="fa-solid fa-bowl-food fa-s" style="color: black;"></i>Alimentos</a>
+            </div>
+            <a href="">
+                <img class="logo" src="src/LOGO.png" alt="">
+            </a>
+            <a href="http://wa.me/525572132264" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #e2e5ea; font-size: 4rem;"></i></a>
+        </header>
+        <script>
+    // Lógica para mostrar/ocultar el menú al hacer clic
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuContainer = document.querySelector('.contenedor-menu');
+
+    menuToggle.addEventListener('click', (e) => {
+      e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      menuContainer.classList.toggle('active'); // Alterna la clase 'active'
+    });
+
+    // Cierra el menú si se hace clic fuera de él
+    document.addEventListener('click', (e) => {
+      if (!menuContainer.contains(e.target)) {
+        menuContainer.classList.remove('active');
+      }
+    });
+  </script>
+    </section>
+    <style>
+      .sociales{
+        background-color: #caa666;
+        text-align: center;
+        padding: 30px;
+        padding-bottom: 0;
+      }
+      .abajo{
+        padding-top: 25px;
+        display: flex;
+      }
+      .izquierda, .derecha{
+        width: 50%;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+      }
+      button{
+        border-radius: 10px;
+        border-color: black;
+        background-color: black;
+        color: #e2e5ea;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+      }
+      @media (max-width: 768px){
+        .abajo{
+          display: block;
+        }
+        .izquierda, .derecha{
+        width: 100%;
+        height: 100% !important;
+        background-color: #caa666;
+        }
+        .izquierda{
+          font-size: 1.4rem;
+          padding-bottom: 15px;
+        }
+        .derecha{
+          text-align: center;
+        }
+        .derecha img{
+          width: 90%;
+        }
+        button i{
+          font-size: 1.7rem !important;
+        }
+        .sociales{
+          height: 76.6vh;
+        }
+        .arriba h1{
+          font-size: 2.5rem !important;
+          color: rgb(27, 27, 27);
+        }
+      }
+    </style>
+    <section class="sociales">
+      <div class="arriba">
+        <h1 style="color: rgb(27, 27, 27); font-size: 3.5rem;">EN TUS EVENTOS SOCIALES / CORPORATIVOS</h1>
+      </div>
+      <div class="abajo">
+        <div class="izquierda">
+          <p>¡Haz que tu celebración sea inolvidable y mágica!</p>
+          <a href="http://wa.me/525572132264" target="_blank"><button><i class="fa-brands fa-whatsapp" style="color: #e2e5ea; font-size: 4rem;"></i>Contáctanos</button></a>
+        </div>
+        <div class="derecha">
+          <img src="src/carro.png" alt="" style="float: right; height: 80%;">
+        </div>
+      </div>
+    </section>
+    <section class="cintilla">
+      <div class="carousel">
+        <div class="group">
+          <div class="card"><img src="src/ga.png" alt="" width="70px" ></div>
+          <div class="card"><img src="src/HMT.png" alt="" width="300px"></div>
+          <div class="card"><img src="src/ga.png" alt="" width="70px"></div>
+          <div class="card"><img src="src/HMT.png" alt="" width="300px"></div>
+        </div>
+        <div aria-hidden class="group">
+          <div class="card"><img src="src/ga.png" alt="" width="70px"></div>
+          <div class="card"><img src="src/HMT.png" alt="" width="300px"></div>
+          <div class="card"><img src="src/ga.png" alt="" width="70px"></div>
+          <div class="card"><img src="src/HMT.png" alt="" width="300px"></div>
+        </div>
+      </div>
+    </section>
+    <section class="car-videos">
+
+    </section>
+    <section class="sociales">
+      <div class="arriba">
+        <h1 style="color: rgb(27, 27, 27); font-size: 3.5rem;">MODELO DE NEGOCIO</h1>
+      </div>
+      <div class="abajo">
+        <div class="izquierda">
+          <p>Consulta más información mediante Whatsapp</p>
+          <a href="http://wa.me/525572132264" target="_blank"><button><i class="fa-brands fa-whatsapp" style="color: #e2e5ea; font-size: 4rem;"></i>Contáctanos</button></a>
+        </div>
+        <div class="derecha">
+          <img src="src/carro.png" alt="" style="float: right; height: 80%;">
+        </div>
+      </div>
+    </section>
+    <section class="ubicaciones">
+        <div class="vis">
+            <h1>Visítanos</h1>
+            <p style="color: #e2e5ea; font-size: 1.3rem;">Nos encontramos en:</p>
+        </div>
+        <div class="datos">
+            <div class="info">
+                <img src="src/centro.png" alt="">
+                <div class="dire">
+                    <p style="color: #e2e5ea;">Pl. Hidalgo, Centro, 54960 Tultepec, Méx.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.6479108716285!2d-99.12922329999999!3d19.685021099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f51d04d649f5%3A0xc83269ea53fac6c9!2sHelado%20M%C3%A1gico%20Tultepec!5e0!3m2!1ses!2smx!4v1762742979569!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="info">
+                <img src="src/teya.png" alt="">
+                <div class="dire">
+                    <p style="color: #e2e5ea;">Av Toluca, Centro, 54960 Santiago Teyahualco, Méx.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.1517689832435!2d-99.12696502579988!3d19.663529433267485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f500126f21c9%3A0xc7f000b74ec73c97!2sHelado%20M%C3%A1gico%20Teyahualco!5e0!3m2!1ses!2smx!4v1762743035706!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+      .carousel{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        background-color: black;
+      }
+      .group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        animation: spin 10s infinite linear;
+        padding-right: 2em;
+      }
+      .carousel::-webkit-scrollbar{
+        display: none;
+      }
+      .card{
+        flex: 0 0 4em;
+        height: 2.2em;
+        width: 15em;
+        background: black;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+      @keyframes spin{
+        from {translate: 0;}
+        to {translate: -100%;}
+      }
+    </style>
+</body>
+</html>
