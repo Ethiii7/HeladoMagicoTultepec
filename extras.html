@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helado Mágico Tultepec</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8fc761a27e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <section class="cintilla">
+            <div class="carousel">
+                <div class="group">
+                <div class="card"><img src="src/ga.png" alt="" width="50px" ></div>
+                <div class="card"><h1 style="color: #e2e5ea;">ALIMENTOS</h1></div>
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">ALIMENTOS</h1></div>
+                </div>
+                <div aria-hidden class="group">
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">ALIMENTOS</h1></div>
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">ALIMENTOS</h1></div>
+                </div>
+            </div>
+        </section>
+        <header class="contenedor-menu fixed-top">
+            <a class="mde" href="#" id="menu-toggle">
+                <img class="mh" src="src/MenuH.png" alt="">
+            </a>
+            <div class="dropdown-menu">
+                <a href="index.html"><i class="fa-solid fa-home fa-s" style="color: black;"></i>Inicio</a>
+                <a href="bebidas.html"><i class="fa-solid fa-mug-hot fa-s" style="color: black;"></i>Bebidas</a>
+                <a href="eventos.html"><i class="fa-solid fa-ice-cream fa-s" style="color: black;"></i>Eventos</a>
+            </div>
+            <a href="">
+                <img class="logo" src="src/LOGO.png" alt="">
+            </a>
+            <a href="http://wa.me/525572132264" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #e2e5ea; font-size: 4rem;"></i></a>
+        </header>
+        <section class="alimento">
+            <div class="izquierda">
+                <div class="arriba">
+                    <div class="precio-producto">
+                        <div class="unouno">
+                            <h1>DUMPLINGS</h1>
+                            <h3>(6PZ)</h3>
+                        </div>
+                        <div class="barpre">
+                            <h1 class="line lineas-mobile">- -</h1>
+                            <h1 class="line lineas-desktop">- - - - - - -</h1>
+                            <h1>$85</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="abajo">
+                    <img src="src/dumplings.png" alt="" width="50%">
+                </div>
+            </div>
+            <div class="derecha">
+                <p>Los dumplings son una tradición de la región de Cantón, 
+                    en el sur de China. Su nombre original es dim sum, 
+                    que significa "pequeño bocado que toca el corazón"</p>
+                <img src="src/di.png" alt="" width="100% !important">
+            </div>
+        </section>
+        <style>
+            .unouno{
+                padding-top: 7%;
+                display: block;
+            }
+            .alimento{
+                display: flex;
+                padding: 10px;
+                padding-right: 0;
+                align-items: center;
+                background-color: #e7dab5;
+            }
+            .derecha{
+                justify-content: center;
+                align-items: center;
+                width: 38%;
+                font-size: 0.78em;
+                position: relative;
+                overflow: hidden;
+            }
+            .derecha p{
+                position: absolute;
+                top: 7%;
+                left: 32%;
+                transform: translate(-1%, -2%);
+                color: #e7dab5 !important;
+                font-family: Arial, Helvetica, sans-serif !important;
+                font-weight: 550 !important;
+            }
+            .izquierda{
+                width: 62%;
+            }
+            @media (max-width:768px){
+                .alimento{
+                    display: block;
+                    padding-top: 0;
+                }
+                .derecha, .izquierda{
+                    width: 100%;
+                }
+                .izquierda{
+                    width: 100%;
+                }
+                .precio-producto{
+                    width: 85%;
+                    justify-items: left;
+                    text-align: left;
+                }
+                .unouno{
+                    padding-top: 11%;
+                    display: block;
+                    text-align: left;
+                    padding-right: 5%;
+                }
+                .abajo{
+                    text-align: left;
+                }
+                .derecha p{
+                    font-size: 0.9rem;
+                    position: absolute;
+                    top: 7%;
+                    left: 32%;
+                    transform: translate(-1%, -2%);
+                    font-weight: 550 !important;
+                }
+            }
+        </style>
+        <script>
+    // Lógica para mostrar/ocultar el menú al hacer clic
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuContainer = document.querySelector('.contenedor-menu');
+
+    menuToggle.addEventListener('click', (e) => {
+      e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      menuContainer.classList.toggle('active'); // Alterna la clase 'active'
+    });
+
+    // Cierra el menú si se hace clic fuera de él
+    document.addEventListener('click', (e) => {
+      if (!menuContainer.contains(e.target)) {
+        menuContainer.classList.remove('active');
+      }
+    });
+  </script>
+  <style>
+      .cintilla{
+        margin-top: 10% !important;
+        width: 100%;
+        overflow: hidden;
+        background: black;
+        padding: 10px 0;
+      }
+      .carousel{
+        margin: 0 auto;
+        width: max-content;
+        animation: scroll 15s linear infinite;
+        display: flex;
+        overflow-x: auto;
+        background-color: black;
+      }
+      .group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        animation: spin 10s infinite linear;
+        padding-right: 1em;
+      }
+      .carousel::-webkit-scrollbar{
+        display: none;
+      }
+      .card{
+        flex: 0 0 4em;
+        height: auto;
+        width: auto;
+        background: black;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+      @keyframes spin{
+        from {translate: 0;}
+        to {translate: -100%;}
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%); /* Loop infinito fluido */
+        }
+      }
+    </style>
+</body>
+</html>
