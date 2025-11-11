@@ -406,9 +406,16 @@
         </div>
     </section>
     <style>
+      .cintilla{
+        width: 100%;
+        overflow: hidden;
+        background: black;
+        padding: 10px 0;
+      }
       .carousel{
         margin: 0 auto;
-        width: 100%;
+        width: max-content;
+        animation: scroll 15s linear infinite;
         display: flex;
         overflow-x: auto;
         background-color: black;
@@ -426,8 +433,8 @@
       }
       .card{
         flex: 0 0 4em;
-        height: 2.2em;
-        width: 15em;
+        height: auto;
+        width: auto;
         background: black;
         font-size: 3rem;
         border-radius: .2em;
@@ -440,6 +447,14 @@
       @keyframes spin{
         from {translate: 0;}
         to {translate: -100%;}
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%); /* Loop infinito fluido */
+        }
       }
     </style>
 </body>
