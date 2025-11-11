@@ -53,16 +53,22 @@
         text-align: center;
         padding: 30px;
         padding-bottom: 0;
+        min-height: 76.6vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       .abajo{
         padding-top: 25px;
         display: flex;
+        flex-wrap: wrap;
       }
       .izquierda, .derecha{
         width: 50%;
-        height: 60%;
         justify-content: center;
         align-items: center;
+        display: flex;
+        flex-direction: column;
       }
       button{
         border-radius: 10px;
@@ -76,13 +82,16 @@
         justify-items: center;
         align-content: center;
       }
+      .derecha img{
+        max-width: 100%;
+        height: auto;
+      }
       @media (max-width: 768px){
         .abajo{
           display: block;
         }
         .izquierda, .derecha{
         width: 100%;
-        height: 100% !important;
         background-color: #caa666;
         }
         .izquierda{
@@ -94,17 +103,25 @@
         }
         .derecha img{
           width: 90%;
+          max-width: 300px;
         }
         button i{
           font-size: 1.7rem !important;
         }
         .sociales{
-          height: 76.6vh;
+          min-height: auto;
+          padding: 20px;
         }
         .arriba h1{
           font-size: 2.5rem !important;
           color: rgb(27, 27, 27);
         }
+      }
+      @media (max-width: 500px) {
+          .sociales {
+              min-height: auto;
+              padding: 15px;
+          }
       }
     </style>
     <section class="sociales">
@@ -138,7 +155,219 @@
       </div>
     </section>
     <section class="car-videos">
-
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_1">
+                <div class="slide-content">
+                  <video autoplay muted loop src="src/video0.mp4"></video>
+                </div>
+              </div>
+              <div class="slide slide_2">
+                <div class="slide-content">
+                  <video autoplay muted loop src="src/video1.mp4"></video>
+                </div>
+              </div>
+              <div class="slide slide_3">
+                <div class="slide-content">
+                  <video autoplay muted loop src="src/video2.mp4"></video>
+                </div>
+              </div>
+              <div class="slide slide_4">
+                <div class="slide-content">
+                  <video autoplay muted loop src="src/video3.mp4"></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+        <style>
+          .car-videos{
+            background-color: #90601f;
+            padding: 40px 0;
+            min-height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          #slider{
+            margin: 0 auto;
+            width: 350px;
+            max-width: 90%;
+            text-align: center;
+          }
+          #slider input[type=radio] {
+            display: none;
+          }
+          #slider label{
+            cursor: pointer;
+            text-decoration: none;
+          }
+          #slides{
+            padding: 10px;
+            border: 3px solid #ccc;
+            background: #fff;
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          }
+          #overflow{
+            width: 100%;
+            overflow: hidden;
+          }
+          #slide1:checked ~ #slides .inner {
+            margin-left: 0;
+          }
+          #slide2:checked ~ #slides .inner {
+            margin-left: -100%;
+          }
+          #slide3:checked ~ #slides .inner {
+            margin-left: -200%;
+          }
+          #slide4:checked ~ #slides .inner {
+            margin-left: -300%;
+          }
+          #slides .inner{
+            transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+            width: 400%;
+            line-height: 0;
+            height: 450px;
+          }
+          #slides .slide{
+            width: 25%;
+            float: left;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100%;
+            color: #fff;
+          }
+          #slides .slide-content video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para que el video se ajuste correctamente */
+            border-radius: 5px;
+          }
+          #slides .slide_1{
+            background: #00171F;
+          }
+          #slides .slide_2{
+            background: #003459;
+          }
+          #slides .slide_3{
+            background: #007EA7;
+          }
+          #slides .slide_4{
+            background: #00A8E8;
+          }
+          #controls{
+            margin: -240px 0 0 0;
+            width: 100%;
+            height: 50px;
+            z-index: 3;
+            position: relative;
+          }
+          #controls label{
+            transition: opacity 0.2s ease-out;
+            display: none;
+            width: 40px;
+            height: 40px;
+            opacity: .8;
+            background-size: contain !important;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+          }
+          #controls label:hover{
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 0.7);
+          }
+          #slide1:checked ~ #controls label:nth-child(2),
+          #slide2:checked ~ #controls label:nth-child(3),
+          #slide3:checked ~ #controls label:nth-child(4),
+          #slide4:checked ~ #controls label:nth-child(1){
+            background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;
+            float: right;
+            margin: 0 -50px 0 0;
+            display: block;
+          }
+          #slide1:checked ~ #controls label:nth-last-child(2),
+          #slide2:checked ~ #controls label:nth-last-child(3),
+          #slide3:checked ~ #controls label:nth-last-child(4),
+          #slide4:checked ~ #controls label:nth-last-child(1){
+            background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) no-repeat;
+            float: left;
+            margin: 0 0 0 -50px;
+            display: block;
+          }
+          #bullets{
+            margin: 150px 0 0;
+            text-align: center;
+          }
+          #bullets label{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background: #ccc;
+            margin: 0 10px;
+            cursor: pointer;
+          }
+          #slide1:checked ~ #bullets label:nth-child(1),
+          #slide2:checked ~ #bullets label:nth-child(2),
+          #slide3:checked ~ #bullets label:nth-child(3),
+          #slide4:checked ~ #bullets label:nth-child(4){
+            background: #caa666;
+          }
+          @media screen and (max-width: 900px){
+          #slide1:checked ~ #controls label:nth-child(2),
+          #slide2:checked ~ #controls label:nth-child(3),
+          #slide3:checked ~ #controls label:nth-child(4),
+          #slide4:checked ~ #controls label:nth-child(1),
+          #slide1:checked ~ #controls label:nth-last-child(2),
+          #slide2:checked ~ #controls label:nth-last-child(3),
+          #slide3:checked ~ #controls label:nth-last-child(4),
+          #slide4:checked ~ #controls label:nth-last-child(1){
+            margin: 0;
+          }
+          #slides .inner {
+            height: 500px; /* Ajuste para móviles */
+          }
+          #controls {
+            margin: -270px 0 0 0; /* Ajuste para móviles */
+          }
+        }
+        @media screen and (max-width: 500px) {
+          #slider {
+            width: 90%;
+          }
+          #slides .inner {
+            height: 400px; /* Ajuste para pantallas más pequeñas */
+          }
+          #controls {
+            margin: -220px 0 0 0; /* Ajuste para pantallas más pequeñas */
+          }
+        }
+        </style>
+      </div>
     </section>
     <section class="sociales">
       <div class="arriba">
@@ -176,7 +405,6 @@
             </div>
         </div>
     </section>
-    
     <style>
       .carousel{
         margin: 0 auto;
