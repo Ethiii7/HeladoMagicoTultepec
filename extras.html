@@ -71,7 +71,7 @@
         </section>
         <style>
             .unouno{
-                padding-top: 7%;
+                padding-top: 7% !important;
                 display: block;
             }
             .alimento{
@@ -133,6 +133,11 @@
                     left: 32%;
                     transform: translate(-1%, -2%);
                     font-weight: 550 !important;
+                }
+            }
+            @media (max-width:400px){
+                .derecha p{
+                    font-size: 0.8rem;
                 }
             }
         </style>
@@ -205,6 +210,129 @@
           transform: translateX(-50%); /* Loop infinito fluido */
         }
       }
+    </style>
+        <section class="otros">
+            <div class="polaroid-pastel">
+                <img class="pol1" src="src/pastel1.png" alt="">
+                <img class="pol2" src="src/pastel2.png" alt="">
+                <img class="pol3" src="src/pastel3.png" alt="">
+            </div>
+            <div class="titulos">
+                <div class="titulo1">
+                    <h1><img src="src/logonegro.png" alt="">PASTEL HELADO <img src="src/logonegro.png" alt=""></h1>
+                </div>
+                <div class="titulo2">
+                    <h1><img src="src/logonegro.png" alt="">PERRITO HELADERO<img src="src/logonegro.png" alt=""></h1>
+                </div>
+            </div>
+            <div class="polaroid-perro">
+                <video class="pol2" autoplay muted loop playsinline src="src/perro1.mp4"></video>
+                <video class="pol3" autoplay muted loop playsinline src="src/perro2.mp4"></video>
+                <video class="pol1" autoplay muted loop playsinline src="src/perro3.mp4"></video>
+            </div>
+        </section>
+        <section class="ubicaciones">
+        <div class="vis">
+            <h1>Visítanos</h1>
+            <p style="color: #e2e5ea; font-size: 1.3rem;">Nos encontramos en:</p>
+        </div>
+        <div class="datos">
+            <div class="info">
+                <img src="src/centro.png" alt="">
+                <div class="dire">
+                    <p style="color: #e2e5ea;">Pl. Hidalgo, Centro, 54960 Tultepec, Méx.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.6479108716285!2d-99.12922329999999!3d19.685021099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f51d04d649f5%3A0xc83269ea53fac6c9!2sHelado%20M%C3%A1gico%20Tultepec!5e0!3m2!1ses!2smx!4v1762742979569!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="info">
+                <img src="src/teya.png" alt="">
+                <div class="dire">
+                    <p style="color: #e2e5ea;">Av Toluca, Centro, 54960 Santiago Teyahualco, Méx.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.1517689832435!2d-99.12696502579988!3d19.663529433267485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f500126f21c9%3A0xc7f000b74ec73c97!2sHelado%20M%C3%A1gico%20Teyahualco!5e0!3m2!1ses!2smx!4v1762743035706!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .otros{
+            background-color: #cba765;
+            padding: 50px;
+            text-align: center;
+            display: flex;
+        }
+        .titulos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .titulo1 h1, .titulo2 h1{
+            font-size: 3.2rem !important;
+        }
+        .titulo1 img, .titulo2 img{
+            width: 10%;
+        }
+        .titulo1, .titulo2{
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        .polaroid-pastel{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 48%;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .polaroid-pastel img, .polaroid-perro video{
+            width: 50%;
+        }
+        .polaroid-perro{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 48%;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .pol1{
+            transform: rotate(12deg);
+        }
+        .pol2{
+            transform: rotate(350deg);
+        }
+        .pol3{
+            transform: rotate(2deg);
+        }
+        @media (max-width:768px){
+            .otros{
+                display: block;
+            }
+            .polaroid-pastel, .polaroid-perro{
+                flex-direction: row;
+                width: 100%;
+            }
+            .polaroid-pastel img, .polaroid-perro video{
+                width: 50%;
+            }
+            .titulo1 h1, .titulo2 h1{
+                font-size: 2.5rem !important;
+            }
+            .titulo1 img, .titulo2 img{
+                width: 15%;
+            }
+            .titulo1{
+                padding-bottom: 1%;
+            }
+            .titulos{
+                padding-top: 5%;
+                padding-bottom: 2%;
+            }
+        }
     </style>
 </body>
 </html>
