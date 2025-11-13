@@ -11,10 +11,10 @@
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8fc761a27e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/saint-george" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gt-walsheim-trial" rel="stylesheet">
 </head>
 <body>
-    <section class="inicio">
-        <img src="src/eventos1.jpeg" alt="" class="fondo-img">
         <header class="contenedor-menu fixed-top">
             <a class="mde" href="#" id="menu-toggle">
                 <img class="mh" src="src/MenuH.png" alt="">
@@ -29,6 +29,11 @@
             </a>
             <a href="http://wa.me/525572132264" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #e2e5ea; font-size: 4rem;"></i></a>
         </header>
+        <style>
+            section{
+              background-color: #e7dab5;
+            }
+        </style>
         <script>
     // Lógica para mostrar/ocultar el menú al hacer clic
     const menuToggle = document.getElementById('menu-toggle');
@@ -45,6 +50,793 @@
         menuContainer.classList.remove('active');
       }
     });
-  </script>
+        </script>
+        <section class="vista-bebidas">
+          <img src="src/bf1.png" class="b1" alt="">
+          <img src="src/bf2.png" class="b2" alt="">
+          <img src="src/bf3.png" class="b3" alt="">
+          <img src="src/bf4.png" class="b4" alt="">
+          <img src="src/bf5.png" class="b5" alt="">
+          <img src="src/bf6.png" class="b6" alt="">
+          <img src="src/bf7.png" class="b7" alt="">
+          <img src="src/bf9.png" class="b8" alt="">
+          <img src="src/bf8.png" class="b9" alt="">
+        </section>
+        <section class="cintilla">
+            <div class="carousel">
+                <div class="group">
+                <div class="card"><img src="src/ga.png" alt="" width="50px" ></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Frías</h1></div>
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Frías</h1></div>
+                </div>
+                <div aria-hidden class="group">
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Frías</h1></div>
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Frías</h1></div>
+                </div>
+            </div>
+        </section>
+  <style>
+      .vista-bebidas {
+        background-color: #e7dab5;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        gap: 0;
+        padding: 0;
+        margin-top: 10%;
+      }
+
+      .vista-bebidas img {
+        width: auto;
+        height: 300px; /* ajusta según lo que necesites */
+        object-fit: cover;
+        transition: transform 0.5s ease, filter 0.4s ease;
+        cursor: pointer;
+        margin: 0;
+        border: none;
+        position: relative;
+      }
+      .b1{
+        height: 320px !important; 
+        left: 13%;
+      }
+      .b2{
+        left: 9%;
+      }
+      .b3{
+        left: 5%;
+      }
+      .b4{
+        height: 260px !important; 
+        left: 2%;
+      }
+      .b5{
+        height: 280px !important; 
+        right: 1%;
+      }
+      .b6{
+        height: 290px !important;
+        right: 4%;
+      }
+      .b7{
+        height: 310px; 
+        right: 7%;
+      }
+      .b8{
+        height: 240px !important; 
+        right: 10%;
+      }
+      .b9{
+        height: 310px !important; 
+        right: 13.5%;
+      }
+      .vista-bebidas img:hover {
+        transform: scale(1.08);
+        filter: brightness(1.1);
+      }
+      .bfs{
+        width: 50% !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        padding-right: 30px !important;
+      }
+      .bcs .precios p{
+        margin-bottom: 1rem !important;
+        font-size: 2.5rem;
+      }
+      .bcs2 .precios p{
+        margin-bottom: 2rem !important;
+        font-size: 2.5rem;
+      }
+      .pa{
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+      }
+      .topping{
+        padding-top: 30px;
+        width: 100% !important;
+      }
+      .topping .precios{
+        font-size: 1.3rem !important;
+        margin-bottom: 15px;
+      }
+      .topping .name{
+        text-align: center;
+        font-size: 2rem !important;
+      }
+      @media (max-width: 768px) {
+        .vista-bebidas{
+          margin-top: 15%;
+        }
+        .b1{
+          height: 80px !important; 
+          left: 11%;
+        }
+        .b2{
+          height: 80px !important; 
+          left: 7%;
+        }
+        .b3{
+          height: 80px !important; 
+          left: 5%;
+        }
+        .b4{
+          height: 80px !important; 
+          left: 3%;
+        }
+        .b5{
+          height: 80px !important; 
+          right: -1%;
+        }
+        .b6{
+          height: 85px !important; 
+          right: 2%;
+        }
+        .b7{
+          height: 90px !important; 
+          right: 5%;
+        }
+        .b8{
+          height: 70px !important;  
+          right: 9%;
+        }
+        .b9{
+          height: 100px !important; 
+          right: 11.5%;
+        }
+        .carousel img{
+          width: 20%;
+        }
+        .topping{
+          padding-top: 5px;
+          font-size: 1rem !important;
+          padding-left: 15px;
+        }
+        .topping .precios{
+          font-size: 1.3rem !important;
+          margin-bottom: 15px;
+          margin-top: 35px;
+        }
+        .topping .precios p{
+          margin-bottom: 25px;
+        }
+        .topping .name{
+          text-align: center;
+          font-size: 2.5rem !important;
+        }
+        .topping .nombresp {
+            font-size: 0.9rem;
+        }
+        .pa{
+          display: block !important;
+        }
+        .bfs{
+          width: 100% !important;
+        }
+        
+        .precios p {
+          margin-bottom: 1.5rem !important;
+        }
+        .bcs2 .precios p{
+          margin-bottom: 2.8rem !important;
+          font-size: 2.5rem;
+        }
+        .left{
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          justify-items: center;
+        }
+      }
+      @media (max-width:480px){
+        .bfs .precios p {
+            margin-bottom: 3.8rem !important;
+        }
+        .bfsu{
+          margin-bottom: 0 !important;
+        }
+        .bcs .precios p {
+          margin-bottom: 2rem !important;
+          font-size: 1.7rem;
+        }
+        .bcs .precios .name {
+          margin-bottom: 1rem !important;
+          font-size: 1.5rem !important;
+        }
+        .bcas{
+          display: flex !important;
+          flex-direction: column !important;
+        }
+        .bcas .right{
+          width: 100% !important;
+          order: 2;
+        }
+         .bcas .left{
+          margin-top: 20px;
+          width: 100% !important;
+          order: 1;
+        }
+        .left img{
+          width: 70%;
+        }
+        .bcs2 .precios p {
+          margin-bottom: 3.5rem !important;
+          font-size: 1.7rem;
+        }
+        .precios {
+          font-size: 1.2rem;
+          padding-left: 20px;
+        }
+      }
+
+      .cintilla{
+        width: 100%;
+        overflow: hidden;
+        background: black;
+        padding: 10px 0;
+      }
+      .carousel{
+        margin: 0 auto;
+        width: max-content;
+        animation: scroll 15s linear infinite;
+        display: flex;
+        overflow-x: auto;
+        background-color: black;
+      }
+      .group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        animation: spin 10s infinite linear;
+        padding-right: 1em;
+      }
+      .carousel::-webkit-scrollbar{
+        display: none;
+      }
+      .card{
+        flex: 0 0 4em;
+        height: auto;
+        width: auto;
+        background: black;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+      @keyframes spin{
+        from {translate: 0;}
+        to {translate: -100%;}
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%); /* Loop infinito fluido */
+        }
+      }
+      .bc{
+        margin-top: 0 !important;
+      }
+    </style>
+        <section>
+            <div class="container pa">
+                <div class="right bfs">
+                    <div class="product-container">
+                        <div class="nombresp">
+                            <h3 class="name">SODA ITALIANA MOLECULAR</h3>
+                            <p>Refresco Italiano con perlas moleculares. <br> Elige tu sabor favorito.</p>
+                            <h3 class="name">SODA ITALIANA FLOTANTE</h3>
+                            <p>Agrega una bola de nieve mágica.</p>
+                            <h3 class="name">MALTEADAS/ <br> FRAPPE HELADO</h3>
+                            <p>Bebidas elaboradas a base de helado o nieve.</p>
+                            <h3 class="name">BUBBLE GRANIZADO</h3>
+                            <p>Bebida base agua con nieve y perlas explosivas.</p>
+                            <h3 class="name">BOBBA TEA</h3>
+                            <p>-Golden Bobba (Maracuyá, vainilla y gliter). 
+                            <br> -Yakultea (Yakult con Matcha).
+                            <br> -Capubublea (Café con deliciosa espuma flameada).</p>
+                            <h3 class="name">FRAPOP</h3>
+                            <p>Bebida personalizada con tu paleta y helado favoritos.</p>
+                        </div>
+                        <div class="precios">
+                            <p>$65</p>
+                            <br>
+                            <P>$70</P>
+                            <br>
+                            <P>$85</P>
+                            <br>
+                            <p>$90</p>
+                            <br>
+                            <p>$85</p>
+                            <br>
+                            <p class="bfsu">$95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right bfs">
+                    <div class="product-container">
+                        <div class="nombresp">
+                            <h3 class="name">FRAPUCCINO TRADICIONAL</h3>
+                            <p>Café, leche, helado de vainilla, hielo y crema batida.</p>
+                            <h3 class="name">CAPUCHINO FRÍO CON HELADO</h3>
+                            <p>Leche espumosa con extracción de café y una bola de tu helado favorito.</p>
+                            <h3 class="name">ESPECIALES MÁGICOS</h3>
+                            <p>Sabores: Matcha, Chai, Taro, Mazapán con cacao.</p>
+                            <h3 class="name">FLOTANTES VAINILLA/<br> LIMÓN/YAKULT</h3>
+                            <p>CocaCola / Dr. Pepper (+$10) con helado o nieve.</p>
+                            <h3 class="name">BEBIDAS MÁGICAS</h3>
+                            <p>-Mezcalitas. 
+                            <br> -Frappe Picafresa.
+                            <br> -Frappe Margarita con nieve y tequila.
+                            <br> -Rainbow Paradise.
+                            <br> -Frapuccino Baileys, Kahlúa o Licor 43.</p>
+                        </div>
+                        <div class="precios">
+                            <p>$70</p>
+                            <br>
+                            <P>$70</P>
+                            <br>
+                            <p>$75</p>
+                            <br>
+                            <p>$60</p>
+                            <br>
+                            <p>$130</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <div class="topping">
+                    <div class="product-container">
+                        <div class="nombresp">
+                            <h3 class="name">AGREGA TOPPINGS</h3>
+                            <br>
+                            <p>-Shot de Licor (1 Onz).
+                            <br> <br> -Fruta Jelly sabor Mango, Litchi, Manzana Verde, 
+                            <br> Cereza o Fruta Tropical.
+                            <br> <br>-Tapioca negra.
+                            <br> <br>-Perlas Explosivas.
+                            <br> <br>-Bola Extra.</p> 
+                        </div>
+                        <div class="precios">
+                            <br><br><br>
+                            <p>$35</p>
+                            <P>$15</P>
+                            <br>
+                            <p>$15</p>
+                            <p>$15</p>
+                            <p>$*</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                
+            </div>
+        </section>
+        <section class="cintilla bc">
+            <div class="carousel">
+                <div class="group">
+                <div class="card"><img src="src/ga.png" alt="" width="50px" ></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Calientes</h1></div>
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Calientes</h1></div>
+                </div>
+                <div aria-hidden class="group">
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Calientes</h1></div>
+                <div class="card"><img src="src/ga.png" alt="" width="50px"></div>
+                <div class="card"><h1 style="color: #e2e5ea;">Bebidas Calientes</h1></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container bcas">
+                <div class="right">
+                    <div class="product-container bcs">
+                        <div class="nombresp">
+                            <h3 class="name">AMERICANO</h3>
+                            <br>
+                            <br>
+                            <h3 class="name">EXPRESSO</h3>
+                            <p>30 ml.</p>
+                            <h3 class="name">CAPUCHINO TRADICIONAL</h3>
+                            <br>
+                            <br>
+                            <h3 class="name">CAPUCHINO DE LICOR</h3>
+                            <p>-Kahlúa. 
+                            <br> -Rompope.
+                            <br> -Amaretto.
+                            <br> -Baileys +$20.
+                            <br> -Licor 43 +$20.</p>
+                            <h3 class="name">LATTE GOURMET</h3>
+                            <p>Sabores: Taro, Matcha, Chai, 
+                            <br> chocolate blanco o Mazapán.</p>
+                        </div>
+                        <div class="precios ">
+                            <p>$35</p>
+                            <P>$20</P>
+                            <P>$45</P>
+                            <br>
+                            <p>$65</p>
+                            <br><br>
+                            <p>$60</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="src/cafe.png" alt="Ejemplo" width="80%" class="zoom-img ej">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container bcas">
+                <div class="left">
+                    <img src="src/te.png" alt="Ejemplo" width="80%" class="zoom-img ej1">
+                </div>
+                <div class="right">
+                    <div class="product-container bcs2">
+                        <div class="nombresp">
+                            <h3 class="name">AFFOGATO</h3>
+                            <p>Bebida Italiana a base de café y helado.</p>
+                            <h3 class="name">MOKA/MOKA BLANCO</h3>
+                            <p>Café y chocolate blanco.</p>
+                            <h3 class="name">CHOCOMÁGICO</h3>
+                            <p>Chocolate, crema batida, chispas de chocolate y bombón flameado al momento.</p>
+                            <h3 class="name">CARAJILLO</h3>
+                            <p>Bebida shakeada a base de café y Licor 43.</p>
+                            <h3 class="name">CAFÉ IRLANDÉS/FLAMEADO</h3>
+                            <p>Coctel de Whisky y café con crema batida.</p> 
+                            <h3 class="name">TIZANAS FRUTALES</h3>
+                            <p>Infusiones con frutas y hierbas comestibles.</p> 
+                        </div>
+                        <div class="precios">
+                            <p>$65</p>
+                            <P>$58</P>
+                            <p>$100</p>
+                            <p>$100</p>
+                            <p>$80</p>
+                            <p>$45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+          .container1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.product-container{
+    display: flex;
+    gap: 10px;
+}
+.nombresp{
+    text-align: left;
+    font-size: 1rem;
+    width: 70%;
+    font-family: 'GT Walsheim Trial', sans-serif !important;
+}
+.nombres p{
+  font-family: 'GT Walsheim Trial', sans-serif !important;
+}
+.precios{
+  text-align: center;
+  height: 100%;
+}
+.precios p{
+  margin-bottom: 0;
+}
+@media (min-width: 769px) {
+  /* Centrar las columnas (left + right) dentro de la fila */
+  .container,
+  .container1 {
+    align-items: center; /* esto centra .left y .right verticalmente */
+  }
+
+  /* .right se convierte en columna y su contenido se centra verticalmente */
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centra verticalmente el contenido */
+    align-items: stretch;      /* hace que el contenido ocupe el ancho disponible */
+    padding: 20px;
+    /* opcional: empuja el bloque un poco hacia abajo respecto al centro exacto */
+    /* ajusta el porcentaje o quítalo si no lo necesitas */
+    transform: translateY(4%);
+  }
+
+  /* Control fino del product-container: ancho máximo y separación */
+  .product-container {
+    display: flex;
+    align-items: center;        /* centra nombres y precios verticalmente entre sí */
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 740px;           /* fija cuán ancho puede ser el bloque de menú */
+    margin: 0 auto;             /* lo centra horizontalmente dentro de .right */
+    padding-left: 0;            /* elimina paddings anteriores que añadían hueco */
+  }
+
+  /* Columnas internas: nombres (izq) y precios (der) */
+  .nombresp {
+    width: calc(100% - 130px);  /* deja espacio para la columna de precios */
+    text-align: left;
+  }
+
+  .precios {
+    width: 130px;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  /* Espaciado entre cada par título/descripción (mejor que usar <br>) */
+  .nombresp h3 {
+    margin-bottom: 6px;
+  }
+  .nombresp p {
+    margin-bottom: 22px;
+  }
+
+  /* Asegurar que las imágenes no dejen espacio abajo 
+  .left img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }*/
+}
+@media (min-width: 769px) {
+  /* Centrar las columnas (left + right) dentro de la fila */
+  .container,
+  .container1 {
+    align-items: center; /* esto centra .left y .right verticalmente */
+  }
+
+  /* .right se convierte en columna y su contenido se centra verticalmente */
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centra verticalmente el contenido */
+    align-items: stretch;      /* hace que el contenido ocupe el ancho disponible */
+    padding: 20px;
+    /* opcional: empuja el bloque un poco hacia abajo respecto al centro exacto */
+    /* ajusta el porcentaje o quítalo si no lo necesitas */
+    transform: translateY(4%);
+  }
+
+  /* Control fino del product-container: ancho máximo y separación */
+  .product-container {
+    display: flex;
+    align-items: center;        /* centra nombres y precios verticalmente entre sí */
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 740px;           /* fija cuán ancho puede ser el bloque de menú */
+    margin: 0 auto;             /* lo centra horizontalmente dentro de .right */
+    padding-left: 0;            /* elimina paddings anteriores que añadían hueco */
+  }
+
+  /* Columnas internas: nombres (izq) y precios (der) */
+  .nombresp {
+    width: calc(100% - 130px);  /* deja espacio para la columna de precios */
+    text-align: left;
+  }
+
+  .precios {
+    width: 130px;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  /* Espaciado entre cada par título/descripción (mejor que usar <br>) */
+  .nombresp h3 {
+    margin-bottom: 6px;
+  }
+  .nombresp p {
+    margin-bottom: 22px;
+  }
+
+  /* Asegurar que las imágenes no dejen espacio abajo 
+  .left img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }*/
+}
+
+@media (max-width: 768px) {
+    .nombresp{
+    font-size: 0.8rem;
+    }
+
+    .precios{
+    font-size: 1.5rem;
+    }
+
+    .nombresp p {
+    margin-bottom: 22px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nombresp{
+    font-size: 0.6rem;
+    }
+
+    .precios{
+    font-size: 1.2rem;
+    }
+
+    .precios p{
+        margin-bottom: 10px;
+    }
+
+    .nombresp p {
+    margin-bottom: 15px;
+    }
+}
+
+.left{
+    text-align: center;
+    width: 40%;
+    position: relative;
+}
+
+.right{
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+}
+        </style>
+        <section class="ubicaciones">
+        <div class="vis">
+            <h1>Visítanos</h1>
+            <p style="color: #e2e5ea; font-size: 1.3rem;">Nos encontramos en:</p>
+        </div>
+        <div class="datos">
+            <div class="info">
+                <img src="src/centro.png" alt="">
+                <div class="dire">
+                    <p style="color: #e2e5ea;">Pl. Hidalgo, Centro, 54960 Tultepec, Méx.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.6479108716285!2d-99.12922329999999!3d19.685021099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f51d04d649f5%3A0xc83269ea53fac6c9!2sHelado%20M%C3%A1gico%20Tultepec!5e0!3m2!1ses!2smx!4v1762742979569!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="info">
+                <img src="src/teya.png" alt="">
+                <div class="dire">
+                    <p style="color: #e2e5ea;">Av Toluca, Centro, 54960 Santiago Teyahualco, Méx.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.1517689832435!2d-99.12696502579988!3d19.663529433267485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f500126f21c9%3A0xc7f000b74ec73c97!2sHelado%20M%C3%A1gico%20Teyahualco!5e0!3m2!1ses!2smx!4v1762743035706!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .otros{
+            background-color: #cba765;
+            padding: 50px;
+            text-align: center;
+            display: flex;
+        }
+        .titulos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .titulo1 h1, .titulo2 h1{
+            font-size: 3.2rem !important;
+        }
+        .titulo1 img, .titulo2 img{
+            width: 10%;
+        }
+        .titulo1, .titulo2{
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        .polaroid-pastel{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 48%;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .polaroid-pastel img, .polaroid-perro video{
+            width: 50%;
+        }
+        .polaroid-perro{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 48%;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .pol1{
+            transform: rotate(12deg);
+        }
+        .pol2{
+            transform: rotate(350deg);
+        }
+        .pol3{
+            transform: rotate(2deg);
+        }
+        @media (max-width:768px){
+            .otros{
+                display: block;
+            }
+            .polaroid-pastel, .polaroid-perro{
+                flex-direction: row;
+                width: 100%;
+            }
+            .polaroid-pastel img, .polaroid-perro video{
+                width: 50%;
+            }
+            .titulo1 h1, .titulo2 h1{
+                font-size: 2.5rem !important;
+            }
+            .titulo1 img, .titulo2 img{
+                width: 15%;
+            }
+            .titulo1{
+                padding-bottom: 1%;
+            }
+            .titulos{
+                padding-top: 5%;
+                padding-bottom: 2%;
+            }
+        }
+    </style>
+    <script src="effects.js"></script>
 </body>
 </html>

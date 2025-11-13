@@ -53,8 +53,9 @@
       color: rgb(63, 63, 63);
       text-decoration: none;
       display: block;
-      padding: 8px 12px;
-      font-size: 1.5rem;
+      padding: 5px 5px;
+      font-size: 1.2rem;
+      text-align: left;
     }
 
     .dropdown-menu a:hover {
@@ -627,4 +628,44 @@ html, body {
 .fondo-img{
     object-fit: cover;
     width: 100%;
+}
+/* Zoom en imágenes */
+.zoom-img {
+    transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 480px){
+    .dropdown-menu a, .dropdown-menu i {
+      padding: 5px 5px;
+      font-size: 1.1rem !important;
+      text-align: left;
+    }
+    .logo{
+        width: 60% !important;
+    }
+    .precio-producto h1{
+        font-size: 1.4rem;
+    }
+    .tb{
+        max-height: 90px;
+        left: 150%;
+    }
+    .prod h1{
+        font-size: 1.2rem !important;
+    }
+    .titulo h1{
+        font-size: 2.3rem;
+    }
+    .litro img{
+        width: 99px !important;
+    }
+    .hero-text h2{
+        font-size: 1.1rem;
+    }
+    .vaso{
+        width: 125px;
+    }
+    .info p{
+        font-size: 0.9rem !important;
+    }
 }
