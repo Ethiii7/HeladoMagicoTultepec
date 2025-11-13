@@ -277,7 +277,7 @@ header a{
     }
     .hero-text {
         top: 44%;
-        left: 55%;
+        left: 50%;
     }
     .hero-text h2 {
         font-size: 1.2rem;
@@ -661,6 +661,10 @@ html, body {
     }
     .hero-text h2{
         font-size: 1.1rem;
+    }
+    .hero-text {
+        top: 44%;
+        left: 53%;
     }
     .vaso{
         width: 125px;
